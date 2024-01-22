@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Подключаем Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <title>Каталог товаров</title>
+    <link type="Image/x-icon" href="./static/favicon.ico" rel="icon">
+</head>
+<body>
+<header class="header">
+        <div class="container-fluid">
+            <nav class="navbar-expand-lg">
+                <a class="nav-link" href="/">
+                    <img src="static/book-logo.jpg" style="width: 75px; height: 65px;" alt="logo">
+                </a>
+                <a class="nav-link" href="catalog"> Каталог </a>
+                <a class="nav-link" href="order"> Корзина </a>
+            </nav>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <!-- Создаем таблицу для отображения книг -->
+        <table class="table table-striped">
+            <!-- Создаем заголовок таблицы с названиями столбцов -->
+            <thead>
+                <tr>
+                    <th scope="col">Название</th>
+                    <th scope="col">Изображение</th>
+                    <th scope="col">Описание</th>
+                    <th scope="col">Цена</th>
+                </tr>
+            </thead>
+            <!-- Создаем тело таблицы с данными из списка книг -->
+            <tbody>
+                <!-- Для каждой книги в списке items -->
+                {% for book in items %}
+                <!-- Создаем строку таблицы с данными о книге -->
+                <tr>
+                    <td>{{ book.title }}</td>
+                    <td><img src="{{ book.image }}"></td>
+                    <td>{{ book.description }}</td>
+                    <td>{{ book.price }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="row" style="align-items: center;">
+                <div class="col">
+                    <p class="footer-info">2023 Демонстрационный сайт <br> студента УлГУ группы <br> ИС-О-20/1 Половникова Дмитрия</p>
+                </div>
+                <div class="col" style="text-align: end;">
+                    <img src="static/book-logo.jpg" style="width: 10%; height: 10%;" alt="logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>

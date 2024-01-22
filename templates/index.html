@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<title>Книжный магазин</title>
+    <link type="Image/x-icon" href="./static/favicon.ico" rel="icon">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="navbar-expand-lg">
+                <a class="nav-link" href="/">
+                    <img src="static/book-logo.jpg" style="width: 75px; height: 65px;" alt="logo">
+                </a>
+                <a class="nav-link" href="catalog"> Каталог </a>
+                <a class="nav-link" href="order"> Корзина </a>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <h1>Книжный магазин</h1>
+                      </div>
+                    <img src="static/Book_shell.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    
+                    <img src="static/Book_shell2.jpg" class="d-block w-100" alt="">
+                </div>
+                <div class="carousel-item">
+                    
+                    <img src="static/Book_shell3.jpg" class="d-block w-100" alt="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Предыдущий</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Следующий</span>
+            </a>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid">
+                <div class="row" style="align-items: center;">
+                    <div class="col">
+                        <p class="footer-info">2023 Демонстрационный сайт <br> студента УлГУ группы <br> ИС-О-20/1 Половникова Дмитрия</p>
+                    </div>
+                    <div class="col" style="text-align: end;">
+                        <img src="static/book-logo.jpg " style="width: 10%; height: 10%;" alt="logo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
